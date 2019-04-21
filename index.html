@@ -1,0 +1,123 @@
+﻿<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>ChangChang</title>
+    <script src="kk.js"></script>
+    <style type="text/css">.heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: absolute;}.heart:after{top: -5px;}.heart:before{left: -5px;}</style>
+
+    <link rel="shortcut icon" href="3.ico" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 374px;
+        }
+        table {
+            background:#b7f6f6;
+            width:auto;
+    
+         
+        }
+        a { color: #FFFF00}
+        body {
+            background-image:url(t43.png) ;
+        }
+    </style>
+
+    <script type="text/javascript" src="jquery-3.2.0.min.js">
+    </script>
+    <script>
+
+        var i = 1;
+
+        function ab() {
+
+            var ac = document.getElementById("ac");
+
+            if (i % 2 == 1) {
+
+                ac.style.display = 'block';
+
+            }
+
+            if (i % 2 == 0) {
+
+                ac.style.display = 'none';
+
+            }
+
+            i++;
+
+        }
+
+</script>
+</head>
+<body >
+    <br><br>
+  <center>  <input id="Button1" type="button" value="Em" onclick="ab();" style="font-family: 楷体; font-size: x-large"  /></center>
+    <br><br>
+    <form id="ac" method="post" action="2.asp" style="display:none" >
+
+        <table class="11" align="center" border="1" bordercolor="pink" width="50%" cellpadding="10" cellspacing="0">
+            <tr>
+                <td align="right">Tên Gọi:</td>
+                <td>
+                    <input type="text" name="XH" value="ChangChang"></td>
+                <td align="right">Tên Thật:</td>
+                <td class="auto-style1">
+                    <input type="text" name="XM" value="ChangXjnh"></td>
+            </tr>
+            <tr>
+                <td align="right">Tuổi:</td>
+                <td>
+                    <select name="age">
+                        <option calue="16">16Tuổi
+                        <option calue="17">17Tuổi
+                        <option calue="18">18Tuổi
+                        <option calue="16" selected>
+                        16Trăng Tròn
+                    </select>
+                </td>
+                <td align="right">Giới Tính:</td>
+                <td class="auto-style1">
+                    <input type="radio" name="gender" checked>Nữ
+                    <input type="radio" name="gender">Nam</td>
+            </tr>
+            <tr>
+                <td align="right">Thuộc Tính:</td>
+                <td>
+                    <input type="radio" name="face" checked>Đáng Yêu    
+                    <input type="radio" name="face"  > Đáng Ghét  
+                </td>
+                <td align="right">Quốc tịch:</td>
+                <td class="auto-style1">
+                    <input type="text" value="Việt Nam">
+                   
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Nơi Em Trào Đời:</td>
+                <td colspan="3">
+                    <input type="text" value="StarCity"></td>
+            </tr>
+            <tr>
+
+                <td align="right">Sở Thích:</td>
+                <td colspan="3">
+                    <input type="checkbox" name="favor1" checked>Yêu Chó  
+                    <input type="checkbox" name="favor2" checked>Hay nói              
+                    <input type="checkbox" name="favor3" checked>Lùn
+                    <input type="checkbox" name="favor3" checked>Xàm Xàm
+                    <input type="checkbox" name="favor3" checked>(Chưa Rõ nữa...				
+					</td>
+            </tr>
+            <tr>
+                <td align="right">Tính Cách:</td>
+                <td colspan="3">
+                    <p class="x" style="font-family: 华文楷体; color: #FFFF00; background-color: #FF0000;">  Chưa rõ Luôn á </p></td>
+            </tr>
+        </table>
+
+    </form>
+   
+    <div style="position: fixed;right: 0;  bottom: 0px;"><a href="index.html#home"><img src="home.png" /></a></div>
+</body>
+</html>
