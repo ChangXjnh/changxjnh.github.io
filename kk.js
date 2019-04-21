@@ -6,7 +6,7 @@ document.addEventListener('visibilitychange', function() {
         clearTimeout(titleTime);
     }
     else {
-        document.title = '(^.^)哈喽 ' ;
+        document.title = '(^.^)Hello ' ;
         titleTime = setTimeout(function() {
             document.title = OriginTitile;
         }, 2000);
