@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ảnh Của Em</title>
+
+    <script src="kk.js"></script>
+    <style type="text/css">.heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: absolute;}.heart:after{top: -5px;}.heart:before{left: -5px;}</style>
+
+	<link rel="shortcut icon" href="3.ico" />
+<link rel="stylesheet" href="css/demo.min.css">
+<link rel="stylesheet" href="css/lgallery.min.css" />
+
+</head>
+<body>
+
+<div class="QuickStart" id="quickstart">
+  <div class="Wrapper">
+  <br>
+    <h1> Ảnh <span>ChangXjnh</span> </h1>
+  </div>
+</div>
+
+<div class="Lgallery" id="lgallery">
+  <div class="Wrapper Wrapper_flex_center">
+    <h2>Demo By Ng</h2>
+    <div class="TemplateLgallery" data-lgallery="10.jpg" data-lghover="300">
+      <div class="TemplateLgallery-Item"> <img src="10.jpg" alt="Witcher" /> </div>
+    </div>
+    <div class="TemplateLgallery" data-lghover="300"
+      data-lgallery="1.jpg,2.jpg,3.jpg,4.jpg,5.jpg,6.jpg,7.jpg,8.jpg,9.jpg,10.jpg"
+      data-lglabel="A photo made by EM," data-lgdescription="ChangXjnh">
+      <div class="TemplateLgallery-Item"> <img src="6.jpg" alt="Witcher" /> </div>
+    </div>
+    <div class="TemplateLgallery" 
+	
+	data-lgallery="4.jpg,1.jpg,2.jpg,3.jpg,5.jpg,6.jpg" data-lghover="300"
+	ata-lglabel="A photo made by EM," data-lgdescription="ChangXjnh">
+      <div class="TemplateLgallery-Item"> <img src="4.jpg" alt="Witcher" /> </div>
+    </div>
+    
+    
+    
+  </div>
+</div>
+
+    
+    
+  </div>
+
+
+<!-- SCRIPTS --> 
+<script src="js/lgallery.min.js"></script> 
+<script>
+  // Slow scrolling
+  function slowScrolling() {
+    let anchors = document.querySelectorAll('a[href*="#"]')
+
+    for (let anchor of anchors) {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault()
+
+        let blockID = anchor.getAttribute('href')
+
+        document.querySelector('' + blockID).scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      });
+    };
+  };
+  slowScrolling()
+
+  // Init LGallery
+  let x = initLG();
+</script>
+
+
+</body>
+</html>
