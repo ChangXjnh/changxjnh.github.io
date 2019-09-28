@@ -695,7 +695,7 @@ input#round:hover,input#round:active,input#round:visited,input#round:focus {
 .year-inner {
 	font-size: 22pt;
 	font-weight: ;
-	color: white;
+	color: #800000;
 	width: 100%;
 	margin-top: 10px;
 	text-align: center;
@@ -719,7 +719,7 @@ input#round:hover,input#round:active,input#round:visited,input#round:focus {
 }
 
 .year-desc {
-	color: white;
+	color: #FF9900;
 	width: 100%;
 	font-size: 13pt;
 	margin-top: 25px;
